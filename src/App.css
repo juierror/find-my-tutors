@@ -1,5 +1,66 @@
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .App {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .App-logo {
@@ -29,4 +90,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.active {
+  background-color: #0e8d12;
+}
+
+.juiheader {
+  position: sticky;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(118, 214, 58);
+}
+
+.juiheaderbutton {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.juiheaderbutton:hover:not(.active) {
+  background-color: white;
+  color: black;
+  border-bottom-color: black solid 10px;
+}
+
+.juiaccount {
+  float: right;
+  display: block;
+  border: none;
+  color: white;
+  background-color: rgb(118, 214, 58);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.juibutton-green {
+  background-color: #17da3e;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  padding: 2vw;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  transition: 0.2s;
+}
+
+.juibutton-green:hover {
+  background-color: #7af993;
+  color: black;
 }
